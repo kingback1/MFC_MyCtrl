@@ -10,20 +10,20 @@ visual studio 13 MFC原生态的简单的自动刷新控件，用的是宿主窗
 
 #此控件类用法
 
-1. 在对话框或窗口类头文件包含控件头文件
+- 在对话框或窗口类头文件包含控件头文件
 
 ```
     #include "MyCtrl.h".
 ```
 
-2. 在对话框头或窗口类头文件定义控件变量
+- 在对话框头或窗口类头文件定义控件变量
 
 ```
     private:
         CMyCtrl xCtrl;
 ```
 
-3. 在对话框或窗口类源文件初始化的地方创建控件
+- 在对话框或窗口类源文件初始化的地方创建控件
 
 ```
     BOOL CTestDlg::OnInitDialog()
@@ -39,7 +39,7 @@ visual studio 13 MFC原生态的简单的自动刷新控件，用的是宿主窗
     }
 ```
 
-4. 在对话框或窗口类源文件OnPaint里现实控件
+- 在对话框或窗口类源文件OnPaint里现实控件
 
 ```
     void CTestDlg::OnPaint()
@@ -49,7 +49,7 @@ visual studio 13 MFC原生态的简单的自动刷新控件，用的是宿主窗
     }
 ```
 
-5. 用向导给对话框或窗口类增加函数UpdateMyCtrl
+- 用向导给对话框或窗口类增加函数UpdateMyCtrl
 
 ```
     LRESULT CTestDlg::UpdateMyCtrl(WPARAM hKey, LPARAM lKey)
@@ -58,7 +58,7 @@ visual studio 13 MFC原生态的简单的自动刷新控件，用的是宿主窗
     }
 ```
 
-6. 给对话框或窗口类添加消息映射
+- 给对话框或窗口类添加消息映射
 
 ```
     BEGIN_MESSAGE_MAP(CTestDlg, CDialog)
